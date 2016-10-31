@@ -57,9 +57,9 @@
 	<p>Our approach is to start simple, and learn as we go...</p>
 	<img src="./rsrc/arduino-101-3.jpg" width="500" style="float:right; margin-left:20px"/>
 	<h3>Mining Module</h3>
-	<p>Our first prototype uses the Arduino/Genuino 101 board. A real bonus is that this board has built-in Bluetooth LE, so gives us a quick start on set up and configuration using a smart phone. Hashing using the Curie microcontroller is slow, unsurprisingly. It clocks in at around 1.5 KH/s, but this only a temporary measure. We are inevitably looking into ASIC hardware and into the design of an ASIC shield which will add more realistic hashing capacity to the unit. We've added on a WiFi101 shield on top to allow the board to work with a remote mining pool server.</p>
+	<p>Our first prototype uses the Arduino/Genuino 101 board. A real bonus is that this board has built-in Bluetooth LE, so gives us a quick start on set up and configuration using a smart phone. We've added on a WiFi101 shield on top to allow the board to work with a remote mining pool server. Not surprisingly, hashing using the Curie microcontroller is slow. It clocks in at around 1.5 KH/s, but this only a temporary measure. We are inevitably looking into ASIC hardware and into the design of an ASIC shield which will add more realistic hashing capacity to the unit.</p>
 	<h3>Pool Server</h3>
-	<p>Obviously, a mining client isn't much good without a pool server, so we're also building out a pool server. This already connects up to bitcoind instance, and we will soon add web registration and views into pool stats. We've also started on an iterative design for a lightweight mining pool protocol that is appropriate for an extremely high number of client modules.</p>
+	<p>Obviously, a mining client isn't much good without a pool server, so we're also building that out. We've also started on an iterative design for a lightweight mining pool protocol that is appropriate for an extremely high number of client modules. The pool server already works with the mining module, and connects up to a local bitcoind instance. We will soon add the web side of things for registration and views of pool stats.</p>
 </div>
 
 <!--
